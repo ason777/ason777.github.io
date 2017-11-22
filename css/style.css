@@ -355,15 +355,19 @@ hr{
 }
 .about_left .news{
     margin-top: 10vh;
-    margin-left: 15%;
+    margin-left: 10%;
     font-size: 30px;
     font-family: 微軟正黑體;
     color: #424040;
 }
-.about_left pre{
+.about_left pre a{
     font-size: 20px;
-    margin-left: 15%;
-    margin-top: 5%;
+}
+.about_left pre{
+    display: inline;
+    font-size: 15px;
+    margin-left: 10%;
+    line-height: 50px;
     border-bottom: dotted 1px;
 }
 .about_left pre a{
@@ -414,12 +418,6 @@ hr{
     height:100vh;
     float: left;
 }
-.recruit{
-    background-color: #f4f492;
-    width: 30%;
-    height:100vh;
-    float: left;
-}
 .connect_top{
     width: 50%;
     margin: auto;
@@ -432,43 +430,77 @@ hr{
 .connect_top span{
     border-bottom: 2px solid #C6494A;
 }
-#arrow{
-    position: absolute;
+.connection .connect_pic img{
     width: 75%;
-    border:0;
-    height:5px;
-    background-color:#C6494A;
-    top:55%;
-}
-#trangle_connect{
+    height: 75%;
     position: absolute;
-    left: 75%;
-    top:54%;
-    border-style: solid;
-    border-width: 9px 0 10px 16px;
-    border-color: transparent transparent transparent rgb(216, 58, 61);
+    top:20%;
 }
-.a1 {
-    position: absolute;
-    top : 32% ; 
-    left : 10%; 
-    border-top : 0px solid #6699cc ; 
-    border-bottom : 0px solid #6699cc ; 
-    border-left : 0px solid #6699cc; 
-    border-right : 3px solid #C6494A ;
-} 
-.line2{
-    margin-left: 20%;
+.connect_right{
+    background-color: #caffa7;
+    width: 30%;
+    height:100vh;
+    float: left;
 }
-.line3{
-    margin-left: 40%;
+.join{
+    width: 100%;
+    height: 50vh;
 }
-.a2{
-    position: absolute;
-    top : 55% ; 
-    left : 20%; 
-    border-top : 0px solid #6699cc ; 
-    border-bottom : 0px solid #6699cc ; 
-    border-left : 0px solid #6699cc; 
-    border-right : 3px solid #C6494A ;
+.recruit{
+    width: 100%;
+    height: 50vh;
+}
+.join{
+    text-align: center;
+    padding-top: 25%;
+}
+.join h1{
+    font-family: 標楷體;
+    display: inline;
+    border-bottom: solid 3px #C6494A;
+    color: #C6494A;
+}
+.join h2{
+    font-family: 標楷體;
+    line-height: 50px;
+}
+.join p{
+    line-height: 80px;
+    font-size: 15px;
+    font-family: 標楷體;
+}
+.join .p_c{
+    width: 50%;
+    height: 40%;
+    margin: auto;   
+}
+.join .p_c p{
+    font-family: 標楷體;
+    line-height: 40px;
+    font-weight: 500;
+    text-align: left;
+    font-size: 20px;
+}
+.recruit{
+    text-align: center;
+    padding-top: 17%;
+}
+.recruit h1{
+    font-family: 標楷體;
+    display: inline;
+    border-bottom: solid 3px #C6494A;
+    color: #C6494A;
+}
+.recruit h2{
+    font-family: 標楷體;
+    line-height: 50px;
+}
+.recruit p{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 標楷體;
+}
+.recruit .go {
+    font-size: 15px;
 }
