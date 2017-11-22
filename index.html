@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>FontJSON = { User: "7668", DomainID: "freeAJQMAIPLWUAJQ", Font: ["DFT_GB2"] }</script>
+    <script src='https://dfo.dynacw.com.tw/DynaJSFont/DynaFont.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFcz0Z62S2oaHDvpLK5_0h8JCz8UMp998&callback=initialize">
+    </script>
+    <script>
+        function initialize() {
+            var uluru = { lat: 24.157323, lng: 120.664161 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: uluru,
+                zoom: 19,
+                styles: [
+                    { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
+                    { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+                    { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
+                    {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'poi',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#263c3f' }]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#6b9a76' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#38414e' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry.stroke',
+                        stylers: [{ color: '#212a37' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#9ca5b3' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#746855' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry.stroke',
+                        stylers: [{ color: '#1f2835' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#f3d19c' }]
+                    },
+                    {
+                        featureType: 'transit',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#2f3948' }]
+                    },
+                    {
+                        featureType: 'transit.station',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#17263c' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#515c6d' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.stroke',
+                        stylers: [{ color: '#17263c' }]
+                    }
+                ]
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+        google.maps.event.addDomListener(
+            window, 'load', initialize); 
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bar">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="">上泓園牛肉麵</a>
+                </div>
+                <div class="mbar">
+                    <a href="#aboutus" id="about"> 關於我們</a>
+                    <a href="#menu" id="featured">精選套餐 </a>
+                    <a href="#map_contain" id="place">營業據點 </a>
+                    <a href="" id="connect">聯絡我們</a>
+                </div>
+            </div>
+        </div>
+        <div class="bgi"></div>
+        <div class="top">
+            <i class="fa fa-caret-square-o-up fa-4x" aria-hidden="true"></i>
+        </div>
+        <div id="menu">
+            <div class="menu_top">
+                <div class="menu_text">
+                    <a href="" class="package">精選套餐</a>
+                    <a href="" class="meals">單點餐點</a>
+                    <a href="" class="dishes">美味小菜</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="menu_bottom">
+                <div class="menu_border">
+                    <div class="package_left">
+                        <div class="package_left_text">
+                            <div id="trangle" class="trangle"></div>
+                            <div class="meal_text">
+                                <a href="">頂級美國Prime
+                                    <br/>生牛肉川燙麵</a>
+                            </div>
+                            <div id="trangle" class="trangle2"></div>
+                            <div class="meal_text2">
+                                <a href="">韓式泡菜無骨
+                                    <br/>牛小排川燙麵</a>
+                            </div>
+                            <div id="trangle" class="trangle3"></div>
+                            <div class="meal_text3">
+                                <a href="">美國無骨牛小排
+                                    <br/>川燙麵</a>
+                            </div>
+                            <div id="trangle" class="trangle4"></div>
+                            <div class="meal_text4">
+                                <a href="">和風醋生牛肉
+                                    <br/>冷麵套餐</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package_center"></div>
+                    <div class="package_right">
+                        <div class="title">
+                            <p>套餐內容</p>
+                        </div>
+                        <div class="meal_contain">
+                            <p>頂級美國Prime
+                                <br/>生牛肉川燙麵</p>
+                            <p>50元小菜x2</p>
+                            <p>50元飲料x1</p>
+                            <p class="price">NT 598</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map_contain">
+            <div class="map_top">
+                <div class="map_text">
+                    <span class="place">營業地點</span>
+                    <a href="" class="pei">北部</a>
+                    <a href="" class="chung">中部</a>
+                    <a href="" class="nan">南部</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="map_bottom">
+                <div class="map_border">
+                    <div class="map_left">
+                        <div class="map_left_text">
+                            <div class="title">
+                                <p>台中總店</p>
+                            </div>
+                            <br>
+                            <br>
+                            <p>地址：臺中市西區博館路155 號</p>
+                            <p>電話：
+                                <span style="letter-spacing:2px;">04– 23269077</span>
+                            </p>
+                            <p>營業時間:11:00 – 14:00</p>
+                            <p class="time">17:00 – 21:00</p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="add">
+                                <a href="">(歡迎加盟)</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="map_right">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aboutus">
+            <div class="about_top">
+                <span>關於我們</span>
+                <hr>
+            </div>
+            <div class="about_bottom">
+                <div class="about_left">
+                    <p class="news">最新消息</p>
+                    <pre><a href="">標題標題標題標題標題</a>                  <a href="">2017/11/11</a></pre><br>
+                    <pre><a href="">標題標題標題標題標題</a>                  <a href="">2017/11/11</a></pre><br>
+                    <pre><a href="">標題標題標題標題標題</a>                  <a href="">2017/11/11</a></pre><br>
+                    <pre><a href="">標題標題標題標題標題</a>                  <a href="">2017/11/11</a></pre><br>
+                    <pre><a href="">標題標題標題標題標題</a>                  <a href="">2017/11/11</a></pre>
+                </div>
+                <div class="about_right">
+                    <p class="story">品牌故事</p>
+                    <p class="text">內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                    <p class="founder">創辦人<pre class="name">林上泓</pre></p>
+                </div>
+            </div>
+        </div>
+        <div id="connectus">
+            <div class="connection">
+                <div class="connect_top">
+                    <span>聯絡我們</span>
+                </div>
+            </div>
+            <hr id="arrow">
+            <div id="trangle_connect"></div>
+            <table border="0" class="a1 line1" cellpadding="0" cellspacing="0" width="80" height="119">
+                <tr>
+                    <td width="100" height="150">　</td>
+                </tr>
+            </table>
+            <table border="0" class="a1 line2" cellpadding="0" cellspacing="0" width="80" height="119">
+                <tr>
+                    <td width="100" height="150">　</td>
+                </tr>
+            </table>
+            <table border="0" class="a1 line3" cellpadding="0" cellspacing="0" width="80" height="119">
+                <tr>
+                    <td width="100" height="150">　</td>
+                </tr>
+            </table>
+            <table border="0" class="a2 line1" cellpadding="0" cellspacing="0" width="80" height="119">
+                <tr>
+                    <td width="100" height="150">　</td>
+                </tr>
+            </table>
+            <table border="0" class="a2 line2" cellpadding="0" cellspacing="0" width="80" height="119">
+                <tr>
+                    <td width="100" height="150">　</td>
+                </tr>
+            </table>       
+            <div class="recruit">
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            //卷軸在捲動時會執行的程式碼
+            var scrollTop = $(window).scrollTop();
+            // console.log(scrollTop)
+
+            if (scrollTop > 500) {
+                //當卷軸高度大於500時會執行以下程式碼
+                //console.log('大於500');
+                // $("#top").addClass("show");
+                // $("#top").removeClass("hide");
+                $(".top").show();
+            }
+            else {
+                //當卷軸高度小於500時會執行以下程式碼
+                //console.log('小於500');
+                // $("#top").addClass("hide");
+                // $("#top").removeClass("show");
+                $(".top").hide();
+            }
+        });
+        $(".top").click(function () {
+            $(window).scrollTop(0);
+            });
+        $('#featured').click(function () {
+                $('html,body').animate({ scrollTop: $('#menu').offset().top }, 800);
+            });
+        $('#place').click(function () {
+                $('html,body').animate({ scrollTop: $('#map_contain').offset().top }, 800);
+            });
+        $('#about').click(function () {
+                $('html,body').animate({ scrollTop: $('#aboutus').offset().top }, 800);
+            });
+        // $(".meal_text2").click(function () {
+                
+        //     });
+    
+    </script>
+</body>
+
+</html>
