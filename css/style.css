@@ -50,13 +50,12 @@ a{text-decoration:none}
 }
 .container .bar .mbar{
     display: inline;
-    margin-top: 19px;
 }
 .container .bgi{
     background-image: url(../img/maxresdefault.jpg);
     height:calc(100vh - 60px);
     background-size: cover;
-    background-attachment: fixed;
+    background-position-y: 50%;
 }
 .top{
     display: inline-block;
@@ -409,13 +408,21 @@ hr{
 }
 #connectus{
     width: 100%;
-    height:100vh;
+    height:90vh;
     position: relative;
+}
+.connect_pic{
+    background-image: url(../img/contect.png);
+    z-index: 10;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 8%;
 }
 .connection{
     background-color: #e6e6e6;
     width: 70%;
-    height:100vh;
+    height:90vh;
     float: left;
 }
 .connect_top{
@@ -434,25 +441,25 @@ hr{
     width: 75%;
     height: 75%;
     position: absolute;
-    top:20%;
+    top:10%;
 }
 .connect_right{
     background-color: #caffa7;
     width: 30%;
-    height:100vh;
+    height:90vh;
     float: left;
 }
 .join{
     width: 100%;
     height: 50vh;
+    text-align: center;
+    padding-top: 10%;
 }
 .recruit{
     width: 100%;
     height: 50vh;
-}
-.join{
     text-align: center;
-    padding-top: 25%;
+    padding-top: 20%;
 }
 .join h1{
     font-family: 標楷體;
@@ -478,12 +485,12 @@ hr{
     font-family: 標楷體;
     line-height: 40px;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
 }
-.recruit{
+.join .p_c .more{
     text-align: center;
-    padding-top: 17%;
+    font-size: 18px;
 }
 .recruit h1{
     font-family: 標楷體;
@@ -502,5 +509,17 @@ hr{
     font-family: 標楷體;
 }
 .recruit .go {
-    font-size: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+ 
+ @media screen and (max-width: 767px) {
+           
+    
+
+
+
+
+
+    
 }
