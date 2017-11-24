@@ -111,28 +111,45 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="bar">
+    <div id="mbar_pad" class="mbar_pad">
+        <div class="mbar_item_pad">
+            <a href="#aboutus_pad" id="about_pad"> 關於我們</a>
+        </div>
+        <div class="mbar_item_pad">
+            <a href="#menu_pad" id="featured_pad">精選套餐 </a>
+        </div>
+        <div class="mbar_item_pad">
+            <a href="#map_contain_pad" id="place_pad">營業據點 </a>
+        </div>
+        <div class="mbar_item_pad">
+            <a href="#connectus_pad" id="connect_pad">聯絡我們</a>
+        </div>
+    </div>
+    <nav class="navbar-scroll">
+        <div onclick="toggle_class()" class="cross" data-toggle="collapse-side" data-target-sidebar=".side-collapse-right" data-target-content=".side-collapse-container-right">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="top">
+        <i class="fa fa-caret-square-o-up fa-4x" aria-hidden="true"></i>
+    </div>
+    <div id="content" class="container">
+        <div id="bar" class="bar">
             <div class="navbar">
-                    <div onclick="toggle_class()" class="cross">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
+                
                 <div class="logo">
                     <a href="">上泓園牛肉麵</a>
                 </div>
-                <div class="mbar">
-                    <a href="#aboutus" id="about"> 關於我們</a>
-                    <a href="#menu" id="featured">精選套餐 </a>
-                    <a href="#map_contain" id="place">營業據點 </a>
-                    <a href="#connectus" id="connect">聯絡我們</a>
+                <div id="mbar" class="mbar">
+                    <div class="mbar_item"><a href="#aboutus" id="about"> 關於我們</a></div>
+                    <div class="mbar_item"><a href="#menu" id="featured">精選套餐 </a></div>
+                    <div class="mbar_item"><a href="#map_contain" id="place">營業據點 </a></div>
+                    <div class="mbar_item"><a href="#connectus" id="connect">聯絡我們</a></div>
                 </div>
             </div>
-        </div>
-        <div class="bgi"></div>
-        <div class="top">
-            <i class="fa fa-caret-square-o-up fa-4x" aria-hidden="true"></i>
+            <div class="bgi"></div>
         </div>
         <div id="menu">
             <div class="menu_top">
@@ -300,6 +317,34 @@
         $(".top").click(function () {
             $(window).scrollTop(0);
             });
+            // navbar
+        function toggle_class() {
+                var mbar = document.querySelector('#mbar_pad');
+                var content = document.querySelector('#content');
+                mbar_pad.classList.toggle('active');
+                content.classList.toggle('active');
+            };
+        $(window).scroll(function () {
+                //卷軸在捲動時會執行的程式碼
+                var scrollTop = $(window).scrollTop();
+                // console.log(scrollTop)
+
+                if (scrollTop >= 0) {
+                    //當卷軸高度大於500時會執行以下程式碼
+                    //console.log('大於500');
+                    // $("#top").addClass("show");
+                    // $("#top").removeClass("hide");
+                    $(".cross").show();
+                }
+                else {
+                    //當卷軸高度小於500時會執行以下程式碼
+                    //console.log('小於500');
+                    // $("#top").addClass("hide");
+                    // $("#top").removeClass("show");
+                    $(".cross").hide();
+                }
+            });
+            // 電腦版
         $('#featured').click(function () {
                 $('html,body').animate({ scrollTop: $('#menu').offset().top }, 800);
             });
@@ -312,11 +357,19 @@
         $('#connect').click(function () {
                 $('html,body').animate({ scrollTop: $('#connectus').offset().top }, 800);
             });
-
-        // $(".meal_text2").click(function () {
-                
-        //     });
-    
+            // 平板版
+        $('#featured_pad').click(function () {
+                $('html,body').animate({ scrollTop: $('#menu').offset().top }, 800);
+            });
+        $('#place_pad').click(function () {
+                $('html,body').animate({ scrollTop: $('#map_contain').offset().top }, 800);
+            });
+        $('#about_pad').click(function () {
+                $('html,body').animate({ scrollTop: $('#aboutus').offset().top }, 800);
+            });
+        $('#connect_pad').click(function () {
+                $('html,body').animate({ scrollTop: $('#connectus').offset().top }, 800);
+            });
     </script>
 </body>
 
