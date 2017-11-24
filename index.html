@@ -8,6 +8,7 @@
     <title>上泓園牛肉麵</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/media1083.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>FontJSON = { User: "7668", DomainID: "freeAJQMAIPLWUAJQ", Font: ["DFT_GB2"] }</script>
     <script src='https://dfo.dynacw.com.tw/DynaJSFont/DynaFont.js'></script>
@@ -151,6 +152,23 @@
             </div>
             <div class="bgi"></div>
         </div>
+
+         <!-- Swiper -->
+  <div class="swiper-container">
+     <div class="min_package"><p>精選套餐</p></div> 
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(img/19224795_1510097259034165_2054387347149802218_n.jpg)"><p>頂級美國Prime生牛肉川燙麵</p></div>
+      <div class="swiper-slide" style="background-image:url(img/160307.jpg)"><p>韓式泡菜無骨牛小排川燙麵</p></div>
+      <div class="swiper-slide" style="background-image:url(img/cm20160422___045127c9ab3a5350a2f65d105f9a5732897.jpg)"><p>美國無骨牛小排川燙麵</p></div>
+      <div class="swiper-slide" style="background-image:url(img/5046500357_e5713239b3.jpg)"><p>和風醋生牛肉冷麵套餐</p></div>
+      <div class="swiper-slide" style="background-image:url(img/cgmcc7109ba138c071e1e323b9d57d9cab5364.jpg)"><p>頂級美國Prime生牛肉川燙麵</p></div>
+      <div class="swiper-slide" style="background-image:url(img/1457618276-471786063_n.jpg)"><p>韓式泡菜無骨牛小排川燙麵</p></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="checkmenu"><a href="">查看菜單</a> </div>
+  </div>
+
         <div id="menu">
             <div class="menu_top">
                 <div class="menu_text">
@@ -294,6 +312,7 @@
             
     </div>
     <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
     <script>
         $(window).scroll(function () {
             //卷軸在捲動時會執行的程式碼
@@ -371,6 +390,23 @@
         $('#connect_pad').click(function () {
                 $('html,body').animate({ scrollTop: $('#connectus').offset().top }, 800);
             });
+        
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
     </script>
 </body>
 

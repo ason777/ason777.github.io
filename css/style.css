@@ -8,6 +8,15 @@ a{text-decoration:none}
     background-color: rgb(238, 211, 211);
     width: 100%;
 }
+.swiper-container{
+    display: none;
+}
+.min_package{
+    display: none;
+}
+.checkmenu{
+    display: none;
+}
 .mbar_item a{
     margin-left: 2%;
     margin-top: 2%;

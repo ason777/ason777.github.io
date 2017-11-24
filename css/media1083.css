@@ -215,6 +215,37 @@
     .bar{
         background-color: rgb(230, 228, 228);
     }
+    .swiper-container {
+        display: block;
+        width: 100%;
+        height: calc(80vh - 50px);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .min_package{
+        display: block;
+        background-color: rgb(228, 185, 148);
+    }
+    .min_package p{
+        text-align: center;
+        padding: 5px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #C6494A;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+    .swiper-slide p{
+        z-index: 10;
+        font-size: 24px;
+        color: white;
+        text-align: center;
+        background-color: #00000094;
+    }
     .navbar-scroll{
         position: fixed;
         left: 0;
@@ -224,12 +255,12 @@
     .mbar_pad{
         position: fixed;
         height: 100vh;
-        width: 20vw;
-        background-color: rgb(173, 238, 89);
+        width: 25vw;
+        background-color: #E1D1B3;
         text-align: center;
         left: 0;
         transform: translateX(-300px);
-        transition: all 1s;
+        transition: all 0.5s;
     }
     .mbar_item_pad{
         margin-top: 50px;
@@ -247,10 +278,10 @@
     }
     .container{
         transform: translateX(0);
-        transition: all 1s;
+        transition: all 0.5s;
     }
     .container.active{
-        transform: translateX(20vw);
+        transform: translateX(25vw);
     }
     .navbar{
         width: 40%;
@@ -297,77 +328,36 @@
         top:85%;
     }
     .container .bgi{
-    background-image: url(../img/minresdefault.jpg);
-    background-size: cover;
-    background-position:center;
+        display: none;
     }
-    .package_left_text{
-        top:20%;
+    #menu{
+        display: none;
     }
-    #trangle{
-        border-width:7.5px 0 7.5px 12px;
+    .checkmenu{
+        display: block;
+        background-color: #E0E0E0;
     }
-    .menu_text .package{
-        font-size: 35px;
+    .checkmenu a{
+        text-decoration:none;
+        text-align: center;
+        border: solid 1px;
+        padding: 5px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #C6494A;
     }
-    .menu_text .meals, .dishes{
-        font-size: 25px;
+    #map_contain{
+        display: none;
     }
-    .meal_text a{
-        font-size: 12px;
-    }
-    .package_left_text a{
-        font-size: 12px;
-    }
-    .trangle2{
-        margin-top: 70px;
-    }
-    .meal_text2{
-        margin-top: 70px;
-    }
-    .trangle3{
-        margin-top: 140px;
-    }
-    .meal_text3{
-        margin-top: 140px;
-    }
-    .trangle4{
-        margin-top: 210px;
-    }
-    .meal_text4{
-        margin-top: 210px;
-    }
-    .package_right .title p{
-        font-size: 25px;
-    }
-    .meal_contain{
-        font-size: 15px;
-    }
-    .price{
-        font-size: 25px;
-    }
-    .map_text .place{
-        font-size: 35px;
-    }
-    .map_text .chung, .pei, .nan{
-        font-size: 25px;
-    }
-    .map_left_text .title p{
-        font-size: 35px;
-    }
-    .map_left_text  p{
-        font-size: 17px;
-    }
-    .map_left_text .add a{
-        font-size: 16px;
-    }
-    .map_left{
-        width: 40%;
-    }
-    .map_right{
-        width: 60%;
-    }
+
+
     #aboutus{
+        display: none;
+    }
+    #connectus{
+        display: none;
+    }
+    /* #aboutus{
         height: 75vh;
     }
     .about_bottom{
@@ -417,7 +407,7 @@
     }
     .recruit {
         padding-top: 20%;
-    }       
+    }        */
     
 
 
