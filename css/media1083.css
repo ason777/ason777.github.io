@@ -94,6 +94,12 @@
     #trangle{
         border-width:7.5px 0 7.5px 12px;
     }
+    #menu{
+        height: 85vh;
+    }
+    .menu_border{
+        height: 70vh;
+    }
     .menu_text .package{
         font-size: 35px;
     }
@@ -133,6 +139,12 @@
     .price{
         font-size: 25px;
     }
+    #map_contain{
+        height: 85vh;
+    }
+    .map_border{
+        height: 70vh;
+    }
     .map_text .place{
         font-size: 35px;
     }
@@ -155,10 +167,10 @@
         width: 60%;
     }
     #aboutus{
-        height: 75vh;
+        height: 70vh;
     }
     .about_bottom{
-        height: calc(80vh - 140px);
+        height: 50vh;
     }
     .about_top{
         font-size: 35px;
@@ -185,25 +197,30 @@
     }
     .connect_pic{
         background-position: center;
+        height: 44vh;
     }
+    #connectus , .connection, .connect_right{
+        height: 60vh;
+    }
+
     .join h1{
         font-size: 30px;
     }
-    .join h2{
-        font-size: 25px;
+    .join .p_c , .join h2{
+        display: none;
     }
-    .join .p_c p ,.recruit p {
-        line-height: 30px;
-        font-size: 15px;
+    .recruit p , .recruit h2{
+        display: none;
     }
-    .join .p_c {
-        width: 89%;
-    }
-    .join .p_c .more , .recruit .go {
-        font-size: 12px;
+    .join{
+        height: 27vh;
     }
     .recruit {
-        padding-top: 20%;
+        height: 27vh;
+        padding-top: 15%;
+    }
+    .more{
+        display: block;
     }
 }
 
