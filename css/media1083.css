@@ -12,7 +12,7 @@
         position: fixed;
         height: 100vh;
         width: 20vw;
-        background-color: rgb(173, 238, 89);
+        background-color: #E1D1B3;
         text-align: center;
         left: 0;
         transform: translateX(-300px);
@@ -40,10 +40,10 @@
         transform: translateX(20vw);
     }
     .navbar{
-        width: 33%;
+        text-align: center;
+        width: 100%;
         height: 50px;
         margin: auto;
-        padding-top: 0.5%;
     }
     .logo{
         float: none;
@@ -51,9 +51,10 @@
         display: inline-block;
         margin: auto;
     }
-    .logo a{
+    .logo p{
         float: none;
         font-size: 40px;
+        text-align: center;
     }
     .container .bar .mbar{
         display: none;
@@ -204,7 +205,12 @@
     }
 
     .join h1{
-        font-size: 30px;
+        font-size: 30px;    
+        border: solid 10px #C6494A;
+        color: #C6494A;
+        padding: 35px;
+        background-color: #ccc;
+        border-radius: 50%;
     }
     .join .p_c , .join h2{
         display: none;
@@ -214,10 +220,20 @@
     }
     .join{
         height: 27vh;
+        padding-top: 45%;
     }
     .recruit {
         height: 27vh;
         padding-top: 15%;
+        margin-top: 15%;
+    }
+    .recruit h1{
+        font-size: 30px;    
+        border: solid 10px #C6494A;
+        color: #C6494A;
+        padding: 35px;
+        background-color: #ccc;
+        border-radius: 50%;
     }
     .more{
         display: block;
@@ -235,7 +251,7 @@
     .swiper-container {
         display: block;
         width: 100%;
-        height: calc(80vh - 50px);
+        height: calc(80vh - 40px);
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -272,7 +288,7 @@
     .mbar_pad{
         position: fixed;
         height: 100vh;
-        width: 25vw;
+        width: 30vw;
         background-color: #E1D1B3;
         text-align: center;
         left: 0;
@@ -298,13 +314,11 @@
         transition: all 0.5s;
     }
     .container.active{
-        transform: translateX(25vw);
+        transform: translateX(30vw);
     }
     .navbar{
-        width: 40%;
         height: 50px;
         margin: auto;
-        padding-top: 1.5%;
     }
     .logo{
         float: none;
@@ -352,79 +366,42 @@
     }
     .checkmenu{
         display: block;
+        height: 100%;
         background-color: #E0E0E0;
     }
     .checkmenu a{
         text-decoration:none;
-        text-align: center;
         border: solid 1px;
-        padding: 5px;
         font-size: 30px;
         font-weight: bold;
         color: #C6494A;
+        background-color: #fff;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,15%);
     }
     #map_contain{
+        height: 75vh;
+    }
+    .map_text .chung, .pei, .nan{
         display: none;
     }
-
-
+    .map_border{
+        width: 90%;
+        height: 60vh;
+    }
+    .map_left{
+        width: 100%;
+    }
+    .map_right{
+        display: none;
+    }
     #aboutus{
         display: none;
     }
     #connectus{
         display: none;
     }
-    /* #aboutus{
-        height: 75vh;
-    }
-    .about_bottom{
-        height: calc(80vh - 140px);
-    }
-    .about_top{
-        font-size: 35px;
-    }
-    .about_left .news , .about_right .story{
-        font-size: 25px;
-        margin-top: 3vh;
-        margin-left: 10%;
-    }
-    .about_left pre a{
-        font-size: 15px;
-    }
-    .about_left pre{
-        line-height: 40px;
-    }
-    .about_right .text{
-        font-size: 15px;
-    }
-    .about_right .founder,.name{
-        display: none;
-    }
-    .connect_top{
-        font-size: 35px;
-    }
-    .connect_pic{
-        background-position: center;
-    }
-    .join h1{
-        font-size: 30px;
-    }
-    .join h2{
-        font-size: 25px;
-    }
-    .join .p_c p ,.recruit p {
-        line-height: 30px;
-        font-size: 15px;
-    }
-    .join .p_c {
-        width: 89%;
-    }
-    .join .p_c .more , .recruit .go {
-        font-size: 12px;
-    }
-    .recruit {
-        padding-top: 20%;
-    }        */
     
 
 
