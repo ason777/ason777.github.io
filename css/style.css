@@ -64,11 +64,33 @@ a{text-decoration:none}
 .container .bar .navbar .logo img{
     margin: 5px;
 }
-.container .bgi{
-    background-image: url(../img/maxresdefault.jpg);
+.bg-image{
+    width: 100%;
     height:calc(100vh - 60px);
     background-size: cover;
-    background-position-y: 50%;
+}
+.image1{
+    background-image: url('../img/maxresdefault.jpg');
+}
+.image2{
+    background-image: url('../img/5046500357_e5713239b4.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image3{
+    background-image: url('../img/19224795_1510097259034165_2054387347149802219_n.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.unslider-arrow.next,.unslider-arrow.prev{
+    top:50vh;
+    z-index: 555;
+}
+.fa-3x{
+    color: white;
 }
 .top{
     display: inline-block;

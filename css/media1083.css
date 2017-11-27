@@ -2,26 +2,50 @@
     body{
         overflow-x: hidden;
     }
+    .automatic-slider{
+        display: none;
+    }
+    .swiper-container{
+        display: block;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+    .swiper-slide p{
+        z-index: 10;
+        font-size: 24px;
+        color: white;
+        text-align: center;
+        background-color: #00000094;
+    }
+    .unslider-arrow.next,.unslider-arrow.prev{
+        display: none;
+    }
     .navbar-scroll{
         position: fixed;
         left: 0;
         top:0;
         z-index: 999;
     }
+    #menu{
+        display: none;
+    }
     .mbar_pad{
         position: fixed;
-        height: 100vh;
-        width: 20vw;
+        height: 40vh;
+        width: 100vw;
         background-color: #E1D1B3;
         text-align: center;
         left: 0;
-        transform: translateX(-300px);
+        transform: translateY(-300px);
         transition: all 1s;
     }
     .mbar_item_pad{
-        margin-top: 50px;
+        margin-top: 13px;
         width: 100%;
-        height: 50px;
     }
     .mbar_item_pad a{
         font-weight: 600;
@@ -30,14 +54,14 @@
         text-decoration:none;
     }
     .mbar_pad.active{
-        transform: translateX(0);
+        transform: translateY(0);
     }
     .container{
-        transform: translateX(0);
+        transform: translateY(0);
         transition: all 1s;
     }
     .container.active{
-        transform: translateX(20vw);
+        transform: translateY(20vw);
     }
     .navbar{
         text-align: center;
@@ -85,9 +109,9 @@
         top:85%;
     }
     .container .bgi{
-    background-image: url(../img/midresdefault.jpg);
-    background-size: cover;
-    background-position:center;
+        background-image: url(../img/midresdefault.jpg);
+        background-size: cover;
+        background-position:center;
     }
     .package_left_text{
         top:20%;
@@ -287,34 +311,33 @@
     }
     .mbar_pad{
         position: fixed;
-        height: 100vh;
-        width: 30vw;
+        height: 50vh;
+        width: 100vw;
         background-color: #E1D1B3;
         text-align: center;
         left: 0;
-        transform: translateX(-300px);
+        transform: translateY(-300px);
         transition: all 0.5s;
     }
     .mbar_item_pad{
-        margin-top: 50px;
+        margin-top: 12px;
         width: 100%;
-        height: 50px;
     }
     .mbar_item_pad a{
         font-weight: 600;
         color: rgb(78, 78, 78);
-        font-size: 25px;
+        font-size: 18px;
         text-decoration:none;
     }
     .mbar_pad.active{
-        transform: translateX(0);
+        transform: translateY(0);
     }
     .container{
-        transform: translateX(0);
+        transform: translateY(0);
         transition: all 0.5s;
     }
     .container.active{
-        transform: translateX(30vw);
+        transform: translateY(30vw);
     }
     .navbar{
         height: 50px;
@@ -366,7 +389,7 @@
     }
     .checkmenu{
         display: block;
-        height: 100%;
+        height: 35px;
         background-color: #E0E0E0;
     }
     .checkmenu a{
@@ -378,7 +401,7 @@
         background-color: #fff;
         position: absolute;
         left: 50%;
-        transform: translate(-50%,15%);
+        transform: translate(-50%,0%);
     }
     #map_contain{
         height: 75vh;

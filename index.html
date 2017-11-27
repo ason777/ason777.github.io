@@ -7,108 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>上泓園牛肉麵</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/unslider.css">
+    <link rel="stylesheet" href="/css/unslider-dots.css">
     <link rel="stylesheet" href="/css/media1083.css">
     <link rel="stylesheet" href="/css/swiper.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110241153-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110241153-1');
+    </script>
     <script>FontJSON = { User: "7668", DomainID: "freeAJQMAIPLWUAJQ", Font: ["DFT_GB2"] }</script>
     <script src='https://dfo.dynacw.com.tw/DynaJSFont/DynaFont.js'></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFcz0Z62S2oaHDvpLK5_0h8JCz8UMp998&callback=initialize">
-    </script>
-    <script>
-        function initialize() {
-            var uluru = { lat: 24.157323, lng: 120.664161 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: uluru,
-                zoom: 19,
-                styles: [
-                    { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
-                    { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
-                    { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
-                    {
-                        featureType: 'administrative.locality',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#d59563' }]
-                    },
-                    {
-                        featureType: 'poi',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#d59563' }]
-                    },
-                    {
-                        featureType: 'poi.park',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#263c3f' }]
-                    },
-                    {
-                        featureType: 'poi.park',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#6b9a76' }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#38414e' }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'geometry.stroke',
-                        stylers: [{ color: '#212a37' }]
-                    },
-                    {
-                        featureType: 'road',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#9ca5b3' }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#746855' }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'geometry.stroke',
-                        stylers: [{ color: '#1f2835' }]
-                    },
-                    {
-                        featureType: 'road.highway',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#f3d19c' }]
-                    },
-                    {
-                        featureType: 'transit',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#2f3948' }]
-                    },
-                    {
-                        featureType: 'transit.station',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#d59563' }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'geometry',
-                        stylers: [{ color: '#17263c' }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'labels.text.fill',
-                        stylers: [{ color: '#515c6d' }]
-                    },
-                    {
-                        featureType: 'water',
-                        elementType: 'labels.text.stroke',
-                        stylers: [{ color: '#17263c' }]
-                    }
-                ]
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
-        google.maps.event.addDomListener(
-            window, 'load', initialize); 
-    </script>
 </head>
 
 <body>
@@ -150,7 +64,16 @@
                     <div class="mbar_item"><a href="#connectus" id="connect">聯絡我們</a></div>
                 </div>
             </div>
-            <div class="bgi"></div>
+            <div class="automatic-slider"  dir="ltr">
+                <ul>
+                    <li><div class="bg-image image1"></div></li>
+                    <li><div class="bg-image image2"></div></li>
+                    <li><div class="bg-image image3"></div></li>
+                </ul>
+            </div>
+           <!-- <div class="bgi">
+                
+            </div>  -->
         </div>
 
          <!-- Swiper -->
@@ -312,8 +235,24 @@
             
     </div>
     <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/unslider-min.js"></script>
     <script src="/js/swiper.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFcz0Z62S2oaHDvpLK5_0h8JCz8UMp998&callback=initialize">
+    </script>
     <script>
+        $(document).ready(function ($) {
+                $('.automatic-slider').unslider({
+                arrows: {
+                        //  Unslider default behaviour
+                        prev: '<a class="unslider-arrow prev"><i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i></a>',
+                        next: '<a class="unslider-arrow next"><i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i></a>',
+                    },
+                    
+                    index: 'last',
+                    animation: 'fade',
+                    autoplay: true,
+                });
+            });
         $(window).scroll(function () {
             //卷軸在捲動時會執行的程式碼
             var scrollTop = $(window).scrollTop();
@@ -407,6 +346,99 @@
         el: '.swiper-pagination',
       },
     });
+    function initialize() {
+            var uluru = { lat: 24.157323, lng: 120.664161 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: uluru,
+                zoom: 19,
+                styles: [
+                    { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
+                    { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+                    { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
+                    {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'poi',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#263c3f' }]
+                    },
+                    {
+                        featureType: 'poi.park',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#6b9a76' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#38414e' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'geometry.stroke',
+                        stylers: [{ color: '#212a37' }]
+                    },
+                    {
+                        featureType: 'road',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#9ca5b3' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#746855' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'geometry.stroke',
+                        stylers: [{ color: '#1f2835' }]
+                    },
+                    {
+                        featureType: 'road.highway',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#f3d19c' }]
+                    },
+                    {
+                        featureType: 'transit',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#2f3948' }]
+                    },
+                    {
+                        featureType: 'transit.station',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#d59563' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{ color: '#17263c' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.fill',
+                        stylers: [{ color: '#515c6d' }]
+                    },
+                    {
+                        featureType: 'water',
+                        elementType: 'labels.text.stroke',
+                        stylers: [{ color: '#17263c' }]
+                    }
+                ]
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+        google.maps.event.addDomListener(
+            window, 'load', initialize); 
     </script>
 </body>
 
