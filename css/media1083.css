@@ -2,50 +2,26 @@
     body{
         overflow-x: hidden;
     }
-    .automatic-slider{
-        display: none;
-    }
-    .swiper-container{
-        display: block;
-    }
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-    }
-    .swiper-slide p{
-        z-index: 10;
-        font-size: 24px;
-        color: white;
-        text-align: center;
-        background-color: #00000094;
-    }
-    .unslider-arrow.next,.unslider-arrow.prev{
-        display: none;
-    }
     .navbar-scroll{
         position: fixed;
         left: 0;
         top:0;
         z-index: 999;
     }
-    #menu{
-        display: none;
-    }
     .mbar_pad{
         position: fixed;
-        height: 40vh;
-        width: 100vw;
-        background-color: #E1D1B3;
+        height: 100vh;
+        width: 20vw;
+        background-color: rgb(173, 238, 89);
         text-align: center;
         left: 0;
-        transform: translateY(-300px);
+        transform: translateX(-300px);
         transition: all 1s;
     }
     .mbar_item_pad{
-        margin-top: 13px;
+        margin-top: 50px;
         width: 100%;
+        height: 50px;
     }
     .mbar_item_pad a{
         font-weight: 600;
@@ -54,20 +30,20 @@
         text-decoration:none;
     }
     .mbar_pad.active{
-        transform: translateY(0);
+        transform: translateX(0);
     }
     .container{
-        transform: translateY(0);
+        transform: translateX(0);
         transition: all 1s;
     }
     .container.active{
-        transform: translateY(20vw);
+        transform: translateX(20vw);
     }
     .navbar{
-        text-align: center;
-        width: 100%;
+        width: 33%;
         height: 50px;
         margin: auto;
+        padding-top: 0.5%;
     }
     .logo{
         float: none;
@@ -75,10 +51,9 @@
         display: inline-block;
         margin: auto;
     }
-    .logo p{
+    .logo a{
         float: none;
         font-size: 40px;
-        text-align: center;
     }
     .container .bar .mbar{
         display: none;
@@ -109,21 +84,15 @@
         top:85%;
     }
     .container .bgi{
-        background-image: url(../img/midresdefault.jpg);
-        background-size: cover;
-        background-position:center;
+    background-image: url(../img/midresdefault.jpg);
+    background-size: cover;
+    background-position:center;
     }
     .package_left_text{
         top:20%;
     }
     #trangle{
         border-width:7.5px 0 7.5px 12px;
-    }
-    #menu{
-        height: 85vh;
-    }
-    .menu_border{
-        height: 70vh;
     }
     .menu_text .package{
         font-size: 35px;
@@ -164,12 +133,6 @@
     .price{
         font-size: 25px;
     }
-    #map_contain{
-        height: 85vh;
-    }
-    .map_border{
-        height: 70vh;
-    }
     .map_text .place{
         font-size: 35px;
     }
@@ -192,10 +155,10 @@
         width: 60%;
     }
     #aboutus{
-        height: 70vh;
+        height: 75vh;
     }
     .about_bottom{
-        height: 50vh;
+        height: calc(80vh - 140px);
     }
     .about_top{
         font-size: 35px;
@@ -222,45 +185,25 @@
     }
     .connect_pic{
         background-position: center;
-        height: 44vh;
     }
-    #connectus , .connection, .connect_right{
-        height: 60vh;
-    }
-
     .join h1{
-        font-size: 30px;    
-        border: solid 10px #C6494A;
-        color: #C6494A;
-        padding: 35px;
-        background-color: #ccc;
-        border-radius: 50%;
+        font-size: 30px;
     }
-    .join .p_c , .join h2{
-        display: none;
+    .join h2{
+        font-size: 25px;
     }
-    .recruit p , .recruit h2{
-        display: none;
+    .join .p_c p ,.recruit p {
+        line-height: 30px;
+        font-size: 15px;
     }
-    .join{
-        height: 27vh;
-        padding-top: 45%;
+    .join .p_c {
+        width: 89%;
+    }
+    .join .p_c .more , .recruit .go {
+        font-size: 12px;
     }
     .recruit {
-        height: 27vh;
-        padding-top: 15%;
-        margin-top: 15%;
-    }
-    .recruit h1{
-        font-size: 30px;    
-        border: solid 10px #C6494A;
-        color: #C6494A;
-        padding: 35px;
-        background-color: #ccc;
-        border-radius: 50%;
-    }
-    .more{
-        display: block;
+        padding-top: 20%;
     }
 }
 
@@ -272,37 +215,6 @@
     .bar{
         background-color: rgb(230, 228, 228);
     }
-    .swiper-container {
-        display: block;
-        width: 100%;
-        height: calc(80vh - 40px);
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .min_package{
-        display: block;
-        background-color: rgb(228, 185, 148);
-    }
-    .min_package p{
-        text-align: center;
-        padding: 5px;
-        font-size: 30px;
-        font-weight: bold;
-        color: #C6494A;
-    }
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-    }
-    .swiper-slide p{
-        z-index: 10;
-        font-size: 24px;
-        color: white;
-        text-align: center;
-        background-color: #00000094;
-    }
     .navbar-scroll{
         position: fixed;
         left: 0;
@@ -311,37 +223,40 @@
     }
     .mbar_pad{
         position: fixed;
-        height: 50vh;
-        width: 100vw;
-        background-color: #E1D1B3;
+        height: 100vh;
+        width: 20vw;
+        background-color: rgb(173, 238, 89);
         text-align: center;
         left: 0;
-        transform: translateY(-300px);
-        transition: all 0.5s;
+        transform: translateX(-300px);
+        transition: all 1s;
     }
     .mbar_item_pad{
-        margin-top: 12px;
+        margin-top: 50px;
         width: 100%;
+        height: 50px;
     }
     .mbar_item_pad a{
         font-weight: 600;
         color: rgb(78, 78, 78);
-        font-size: 18px;
+        font-size: 25px;
         text-decoration:none;
     }
     .mbar_pad.active{
-        transform: translateY(0);
+        transform: translateX(0);
     }
     .container{
-        transform: translateY(0);
-        transition: all 0.5s;
+        transform: translateX(0);
+        transition: all 1s;
     }
     .container.active{
-        transform: translateY(30vw);
+        transform: translateX(20vw);
     }
     .navbar{
+        width: 40%;
         height: 50px;
         margin: auto;
+        padding-top: 1.5%;
     }
     .logo{
         float: none;
@@ -382,49 +297,127 @@
         top:85%;
     }
     .container .bgi{
-        display: none;
+    background-image: url(../img/minresdefault.jpg);
+    background-size: cover;
+    background-position:center;
     }
-    #menu{
-        display: none;
+    .package_left_text{
+        top:20%;
     }
-    .checkmenu{
-        display: block;
-        height: 35px;
-        background-color: #E0E0E0;
+    #trangle{
+        border-width:7.5px 0 7.5px 12px;
     }
-    .checkmenu a{
-        text-decoration:none;
-        border: solid 1px;
-        font-size: 30px;
-        font-weight: bold;
-        color: #C6494A;
-        background-color: #fff;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,0%);
+    .menu_text .package{
+        font-size: 35px;
     }
-    #map_contain{
-        height: 75vh;
+    .menu_text .meals, .dishes{
+        font-size: 25px;
+    }
+    .meal_text a{
+        font-size: 12px;
+    }
+    .package_left_text a{
+        font-size: 12px;
+    }
+    .trangle2{
+        margin-top: 70px;
+    }
+    .meal_text2{
+        margin-top: 70px;
+    }
+    .trangle3{
+        margin-top: 140px;
+    }
+    .meal_text3{
+        margin-top: 140px;
+    }
+    .trangle4{
+        margin-top: 210px;
+    }
+    .meal_text4{
+        margin-top: 210px;
+    }
+    .package_right .title p{
+        font-size: 25px;
+    }
+    .meal_contain{
+        font-size: 15px;
+    }
+    .price{
+        font-size: 25px;
+    }
+    .map_text .place{
+        font-size: 35px;
     }
     .map_text .chung, .pei, .nan{
-        display: none;
+        font-size: 25px;
     }
-    .map_border{
-        width: 90%;
-        height: 60vh;
+    .map_left_text .title p{
+        font-size: 35px;
+    }
+    .map_left_text  p{
+        font-size: 17px;
+    }
+    .map_left_text .add a{
+        font-size: 16px;
     }
     .map_left{
-        width: 100%;
+        width: 40%;
     }
     .map_right{
-        display: none;
+        width: 60%;
     }
     #aboutus{
+        height: 75vh;
+    }
+    .about_bottom{
+        height: calc(80vh - 140px);
+    }
+    .about_top{
+        font-size: 35px;
+    }
+    .about_left .news , .about_right .story{
+        font-size: 25px;
+        margin-top: 3vh;
+        margin-left: 10%;
+    }
+    .about_left pre a{
+        font-size: 15px;
+    }
+    .about_left pre{
+        line-height: 40px;
+    }
+    .about_right .text{
+        font-size: 15px;
+    }
+    .about_right .founder,.name{
         display: none;
     }
-    #connectus{
-        display: none;
+    .connect_top{
+        font-size: 35px;
     }
+    .connect_pic{
+        background-position: center;
+    }
+    .join h1{
+        font-size: 30px;
+    }
+    .join h2{
+        font-size: 25px;
+    }
+    .join .p_c p ,.recruit p {
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .join .p_c {
+        width: 89%;
+    }
+    .join .p_c .more , .recruit .go {
+        font-size: 12px;
+    }
+    .recruit {
+        padding-top: 20%;
+    }       
     
 
 
